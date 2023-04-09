@@ -1,0 +1,166 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  color: var(--color-body);
+}
+:root {
+  --color-body: rgba(46, 47, 66, 1);
+  --color-hero-bg: rgba(46, 47, 66, 1);
+  --color-contacts: rgba(67, 68, 85, 1);
+  --color-contacts-hover: #404bbf;
+  --color-nav-link-text: rgba(77, 90, 229, 1);
+  --color-hero-title: rgba(255, 255, 255, 1);
+  --color-hero-btn: rgba(255, 255, 255, 1);
+  --color-hero-btn-bg: rgba(77, 90, 229, 1);
+  --color-filter-btn: rgba(77, 90, 229, 1);
+  --color-filter-btn-hover: rgba(255, 255, 255, 1);
+  --color-filter-btn-bg-hover: rgba(64, 75, 191, 1);
+  --color-filter-btn-bg: rgba(244, 244, 253, 1);
+  --color-text-desc: rgba(67, 68, 85, 1);
+  --color-footer-text: rgba(244, 244, 253, 1);
+  --color-footer-link: rgba(77, 90, 229, 1);
+  --color-footer-bg: rgba(46, 47, 66, 1);
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+/* header style start */
+.nav-link {
+  font-family: "Raleway", sans-serif;
+  color: inherit;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17;
+}
+.nav-link-text {
+  font-family: "Raleway", sans-serif;
+  color: var(--color-nav-link-text);
+}
+.nav-list {
+  font-weight: 500;
+  line-height: 1.5;
+}
+.contacts-link {
+  font-style: normal;
+  color: var(--color-contacts);
+  font-weight: 400;
+  line-height: 1.5;
+}
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--color-contacts-hover);
+}
+.nav-list a {
+  color: #2e2f42;
+}
+/* header style end  */
+
+/* hero style start */
+.hero {
+  background-color: var(--color-hero-bg);
+}
+.hero-title {
+  color: var(--color-hero-title);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.11;
+}
+.hero-btn {
+  color: var(--color-hero-btn);
+  background-color: var(--color-hero-btn-bg);
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 1.5;
+}
+/* hero style end */
+
+/* feauter style start */
+.features-list-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.features-list-desc {
+  color: var(--color-text-desc);
+  line-height: 1.5;
+}
+/* features style end */
+
+/* doing style start */
+.doing-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+}
+/* doing style end */
+
+/* team style start */
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+}
+.team-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.team-desc {
+  color: var(--color-text-desc);
+  line-height: 1.5;
+}
+/* team style end */
+
+/* portfolio page style start */
+
+/* filter style start */
+.filter-btn {
+  color: var(--color-filter-btn);
+  background-color: var(--color-filter-btn-bg);
+  font-weight: 500;
+  line-height: 1.5;
+  cursor: pointer;
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--color-filter-btn-hover);
+  background-color: var(--color-filter-btn-bg-hover);
+}
+/* filter style end */
+
+/* possibility style start */
+.card-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.card-desc {
+  line-height: 1.5;
+  color: var(--color-text-desc);
+}
+/* possibility style end */
+
+/* footer style start */
+.footer {
+  background-color: var(--color-footer-bg);
+}
+.footer-link {
+  font-family: "Raleway", sans-serif;
+  color: var(--color-footer-text);
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17;
+}
+.footer-link-text {
+  font-family: "Raleway", sans-serif;
+  color: var(--color-footer-link);
+}
+.footer-desc {
+  color: var(--color-footer-text);
+  line-height: 1.5;
+}
+/* footer style end */
