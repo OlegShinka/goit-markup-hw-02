@@ -1,117 +1,156 @@
 body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  color: var(--color-body);
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
 }
 :root {
-  --color-body: rgba(46, 47, 66, 1);
-  --color-hero-bg: rgba(46, 47, 66, 1);
-  --color-contacts: rgba(67, 68, 85, 1);
-  --color-contacts-hover: #404bbf;
-  --color-nav-link-text: rgba(77, 90, 229, 1);
-  --color-hero-title: rgba(255, 255, 255, 1);
-  --color-hero-btn: rgba(255, 255, 255, 1);
-  --color-hero-btn-bg: rgba(77, 90, 229, 1);
-  --color-filter-btn: rgba(77, 90, 229, 1);
-  --color-filter-btn-hover: rgba(255, 255, 255, 1);
-  --color-filter-btn-bg-hover: rgba(64, 75, 191, 1);
-  --color-filter-btn-bg: rgba(244, 244, 253, 1);
-  --color-text-desc: rgba(67, 68, 85, 1);
-  --color-footer-text: rgba(244, 244, 253, 1);
-  --color-footer-link: rgba(77, 90, 229, 1);
-  --color-footer-bg: rgba(46, 47, 66, 1);
+  --primary-text-color: #434455;
+  --primary-bg-color: #ffffff;
+  --secondary-text-color: #434455;
+  --secondary-bg-color: #2e2f42;
+  --title-text-color: #ffffff;
+  --subtitle-text-color: #2e2f42;
+  --section-bg-color: #f4f4fd;
+  --footer-text-color: #f4f4fd;
+  --link-text-color: #4d5ae5;
+  --btn-bg-color: #4d5ae5;
+  --btn-text-color: #ffffff;
+  --link-span-color: #2e2f42;
+  --active-hover-color: #404bbf;
 }
-a {
+
+.link {
   text-decoration: none;
 }
-ul {
+.list {
   list-style: none;
 }
 
 /* header style start */
-.nav-link {
+.link-logo {
   font-family: "Raleway", sans-serif;
-  color: inherit;
+  color: var(--link-text-color);
   font-size: 18px;
   font-weight: 800;
   line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
-.nav-link-text {
+.link-span {
   font-family: "Raleway", sans-serif;
-  color: var(--color-nav-link-text);
+  color: var(--link-span-color);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
-.nav-list {
+.link-nav {
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
 }
 .contacts-link {
   font-style: normal;
-  color: var(--color-contacts);
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  letter-spacing: 0.02em;
   font-weight: 400;
   line-height: 1.5;
 }
 .contacts-link:hover,
 .contacts-link:focus {
-  color: var(--color-contacts-hover);
+  color: var(--active-hover-color);
 }
-.nav-list a {
-  color: #2e2f42;
-}
+
 /* header style end  */
 
 /* hero style start */
 .hero {
-  background-color: var(--color-hero-bg);
+  background-color: var(--secondary-bg-color);
 }
 .hero-title {
-  color: var(--color-hero-title);
+  color: var(--title-text-color);
   font-weight: 700;
   font-size: 56px;
-  line-height: 1.11;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
 }
 .hero-btn {
-  color: var(--color-hero-btn);
-  background-color: var(--color-hero-btn-bg);
+  color: var(--btn-text-color);
+  background-color: var(--btn-bg-color);
   cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--active-hover-color);
 }
 /* hero style end */
 
 /* feauter style start */
 .features-list-title {
+  color: var(--subtitle-text-color);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 .features-list-desc {
-  color: var(--color-text-desc);
+  color: var(--secondary-text-color);
   line-height: 1.5;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
 }
 /* features style end */
 
 /* doing style start */
 .doing-title {
+  color: var(--subtitle-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
 /* doing style end */
 
 /* team style start */
+.team {
+  background-color: var(--section-bg-color);
+}
+.list-item {
+  background-color: var(--primary-bg-color);
+}
 .team-title {
+  color: var();
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
 }
 .team-subtitle {
+  color: var(--subtitle-text-color);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 .team-desc {
-  color: var(--color-text-desc);
+  color: var(--secondary-text-color);
   line-height: 1.5;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
 }
 /* team style end */
 
@@ -119,48 +158,56 @@ ul {
 
 /* filter style start */
 .filter-btn {
-  color: var(--color-filter-btn);
-  background-color: var(--color-filter-btn-bg);
+  color: var(--link-text-color);
+  background-color: var(--section-bg-color);
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
+  letter-spacing: 0.04em;
   cursor: pointer;
 }
 .filter-btn:hover,
 .filter-btn:focus {
-  color: var(--color-filter-btn-hover);
-  background-color: var(--color-filter-btn-bg-hover);
+  color: var(--title-text-color);
+  background-color: var(--active-hover-color);
 }
 /* filter style end */
 
 /* possibility style start */
 .card-title {
+  color: var(--subtitle-text-color);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 .card-desc {
+  color: var(--secondary-text-color);
   line-height: 1.5;
-  color: var(--color-text-desc);
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
 }
 /* possibility style end */
 
 /* footer style start */
 .footer {
-  background-color: var(--color-footer-bg);
+  background-color: var(--secondary-bg-color);
 }
 .footer-link {
   font-family: "Raleway", sans-serif;
-  color: var(--color-footer-text);
+  color: var(--link-text-color);
   font-size: 18px;
   font-weight: 800;
   line-height: 1.17;
+  text-transform: uppercase;
 }
 .footer-link-text {
   font-family: "Raleway", sans-serif;
-  color: var(--color-footer-link);
+  color: var(--footer-text-color);
 }
 .footer-desc {
-  color: var(--color-footer-text);
+  color: var(--footer-text-color);
   line-height: 1.5;
 }
 /* footer style end */
